@@ -2,6 +2,8 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family:  sans-serif;
+    font-weight: bold;
 }
 
 body{
@@ -21,20 +23,24 @@ body{
 
 .settings{
     width: 95%;
-   
     height: 10vh;
     margin: auto;
     margin-top: 1.5em;
     line-height: 10vh;
     display: flex;
     justify-content: space-around;
-    font-weight: bold;
+    
 }
 
+.logo{
+    font-size: 18px;
+}
 .volumeBar {
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -3rem;
     height: 10vh; 
     line-height: 0;
 }
@@ -53,7 +59,7 @@ body{
     margin: auto;
     margin-top: 1em;
     display: flex;
-
+    text-align: center;
 }
 
 .keys .key{
@@ -64,6 +70,7 @@ body{
     width: 70px;
     height: 100%;
     background-color: white;
+    line-height: 50vh;
     color: black;
     border-radius: 10px;
     border: 1px solid black;
@@ -72,6 +79,7 @@ body{
 #black{
     width: 50px;
     height: 50%;
+    line-height: 22vh;
     background-color: black;
     border-radius: 10px;
     margin: 0 -24px 0 -24px;

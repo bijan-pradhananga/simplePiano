@@ -1,4 +1,5 @@
 const pianoKeys = document.querySelectorAll(".keys .key");
+let volumeSlider = document.querySelector(".slider input")
 
 let audio = new Audio("tunes/a.wav");
 
@@ -15,4 +16,10 @@ const pressedKey = (e) =>{
     playTune(e.key);
 }
 
-document.addEventListener("keydown",pressedKey)
+const volumeChanger = (e) =>{
+    audio.volume = e.target.value;
+}
+
+
+document.addEventListener("keydown",pressedKey);
+volumeSlider.addEventListener("input",volumeChanger);
