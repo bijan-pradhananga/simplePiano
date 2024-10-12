@@ -66,6 +66,14 @@ body{
     cursor: pointer;
 }
 
+.key span {
+    visibility: visible;
+  }
+  
+  .key span.hidden {
+    visibility: hidden;
+  }
+
 #white{
     width: 70px;
     height: 100%;

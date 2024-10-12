@@ -20,6 +20,16 @@ const volumeChanger = (e) =>{
     audio.volume = e.target.value;
 }
 
+document.getElementById('toggleKeyText').addEventListener('change', function() {
+    const keys = document.querySelectorAll('.key span');
+    keys.forEach(key => {
+      if (this.checked) {
+        key.classList.add('hidden');
+      } else {
+        key.classList.remove('hidden');
+      }
+    });
+  });
 
 document.addEventListener("keydown",pressedKey);
 volumeSlider.addEventListener("input",volumeChanger);
